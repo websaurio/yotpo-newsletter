@@ -1,0 +1,22 @@
+table#newsletter(border="0" cellpadding="0" cellspacing="0" height="100%" width="600px")
+  tr
+    td
+      // start header
+      +section()(class="header")
+        +placehold(600, 336, '2f84ed', 'ffffff')
+      // end header
+      +section()(class="subheader")
+        include intro.jade
+      +section()
+        include more-from.jade
+      +section()
+        div(style="padding-top:40px;padding-bottom:36px;")
+          h3( style="padding-bottom:26px"): a.link.text-black(href="#").
+            Now you can easily handle reviews within your help <br /> desk sotware.
+          +readnow()
+      +section()
+        include card.jade
+      +section()
+        include list.jade
+      +section()
+        include footer.jade

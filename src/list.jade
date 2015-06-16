@@ -1,0 +1,20 @@
+mixin list-item(isFirst)
+  tr(class!= isFirst ? 'first' : '')
+    td(valign="top" style="padding-right:42px;padding-top:34px;padding-bottom:34px;")
+      +placehold(124, 124, 'eeeeee', '000000')
+    td.text-left
+      b: a.title.link.text-blue(href="#") Now you can easily handle reviews
+      p.description(style="margin: 0;padding-top:10px;padding-bottom:16px")
+        a.link.text-gray(href="#").
+          We've built a toold that integrates with all of them to give your
+          Customer Service learn the power to manage your reviews
+          and Q&A.
+      a.text-blue(href="#") Read More...
+
+div.section-5
+  h3: a.link.text-black(href="#").
+    Now you can easily handle reviews within your help <br /> desk software.
+  hr
+  table.list(border="0" cellpadding="0" cellspacing="0" width="100%")
+    +list-item(true)
+    +list-item()

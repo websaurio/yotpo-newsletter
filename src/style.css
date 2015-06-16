@@ -1,0 +1,164 @@
+#container {
+  background-color: #f2f2f2;
+  font-family: Arial;
+}
+#main {
+  background-color: #ffffff;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #cccccc;
+  padding: 37px;
+}
+.content {
+  text-align: center;
+}
+.bg-gray {
+  background-color: #f8f8f8;
+}
+
+h1 {
+  font-size: 28px;
+  line-height: 34px;
+}
+h3 {
+  font-size: 20px;
+  padding-bottom: 26px;
+}
+h1, h3, h4 {
+  padding: 0;
+  margin: 0;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.btn {
+  border: 0;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+  font-size: 14px;
+  border-radius: 5px;
+  display: inline-block;
+  text-decoration: none;
+}
+.btn-large {
+  width: 146px;
+}
+.btn-content {
+  width: 46px;
+}
+.btn-warning {
+  background-color: #fec600;
+  color: #313239;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-center {
+  text-align: center;
+}
+.text-blue {
+  color:#266abe;
+}
+.text-black {
+  color:#232631;
+}
+.text-gray {
+  color:#888888;
+}
+
+.section-1 {
+
+}
+.intro {
+  padding-top: 39px;
+  padding-bottom: 49px;
+}
+.intro .title {
+  font-size: 28px;
+  line-height: 37px;
+}
+.intro .description {
+  margin:0;
+  padding-top: 22px;
+  padding-bottom: 30px;
+  line-height: 23px;
+}
+
+.section-2 {
+  padding-top: 16px;
+  padding-left: 31px;
+  padding-right: 31px;
+}
+.more-from {
+  font-size: 14px;
+  border-bottom:1px solid #e3e3e3;
+  height:36px;
+  line-height:36px;
+  text-align:left;
+}
+.cell {
+  width:244px;
+  padding-bottom:30px
+}
+.cell div {
+  padding-top: 14px;
+}
+.cell-left {
+}
+.cell-right {
+  padding-left:18px;
+}
+.cell .title {
+  font-size: 18px;
+}
+
+.section-4 {
+  padding: 40px;
+}
+.card .title {
+  font-size: 18px;
+}
+.card .description {
+  line-height: 20px;
+}
+
+.section-5 {
+  padding: 40px 34px 0 34px;
+  font-family: Arial;
+}
+hr {
+  width:50px;
+  border:0;
+  border-top:5px solid #cccccc;
+  margin-top: 20px;
+}
+.list td{
+  border-top: 1px solid #cccccc;
+}
+.list .first td {
+  border-top: 0;
+}
+
+.list .title {
+  font-size: 18px;
+}
+.list .description {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.footer {
+  padding-top: 37px;
+}
+.footer .line {
+  line-height: 24px;
+  font-size: 13px;
+}

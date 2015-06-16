@@ -1,0 +1,13 @@
+mixin placehold(width, height, bgColor, color)
+  a(href="#")
+    img(alt="#" src='http://placehold.it/' + width + 'x' + height + '/' + bgColor + '/' + color)
+
+mixin readnow()
+  a.btn.btn-large.btn-warning(href="#") READ NOW
+
+mixin section(colspan)
+  - var classText = 'content ';
+  - classText+= attributes.class ? attributes.class : '';
+  tr
+    td(class=classText)
+      block
