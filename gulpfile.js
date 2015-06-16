@@ -26,7 +26,7 @@ gulp.task('build', function() {
             .pipe(jade({ pretty: true }))
             .pipe(inlineCss())
             .pipe(rename("index.html"))
-            .pipe(gulp.dest('./build/'));
+            .pipe(gulp.dest('.'));
 });
 
 gulp.task('test', function() {
