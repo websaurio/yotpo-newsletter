@@ -1,11 +1,9 @@
 table#newsletter(border="0" cellpadding="0" cellspacing="0" height="100%" width="600px")
   tr
     td
-      // start header
       +section()(class="header")
         +placehold(600, 336, '2f84ed', 'ffffff')
-      // end header
-      +section()(class="subheader")
+      +section()
         include intro.jade
       +section()
         include more-from.jade

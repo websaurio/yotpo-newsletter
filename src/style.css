@@ -16,15 +16,13 @@
   background-color: #f8f8f8;
 }
 
-h1 {
-  font-size: 28px;
-  line-height: 34px;
+a, a img, img {
+  border: 0;
 }
+
 h3 {
   font-size: 20px;
   padding-bottom: 26px;
-}
-h1, h3, h4 {
   padding: 0;
   margin: 0;
   font-family: Arial;
@@ -74,9 +72,7 @@ h1, h3, h4 {
   color:#888888;
 }
 
-.section-1 {
-
-}
+.section-1 {}
 .intro {
   padding-top: 39px;
   padding-bottom: 49px;
@@ -138,7 +134,6 @@ hr {
   width:50px;
   border:0;
   border-top:5px solid #cccccc;
-  margin-top: 20px;
 }
 .list td{
   border-top: 1px solid #cccccc;
