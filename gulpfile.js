@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var jade = require('gulp-jade');
 var inlineCss = require('gulp-inline-css');
-var rename = require("gulp-rename");
+var rename = require('gulp-rename');
 var nodemailer = require('nodemailer');
 
 gulp.task('jade', function() {
@@ -11,13 +11,13 @@ gulp.task('jade', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(['./src/*.jade', './src/style.css'], ['jade', 'inline-css']);
+  gulp.watch(['./src/*.jade', './src/style.css'], ['build']);
 });
 
 gulp.task('inline-css', function() {
   return gulp.src('./build/main.html')
       .pipe(inlineCss())
-      .pipe(rename("index.html"))
+      .pipe(rename('index.html'))
       .pipe(gulp.dest('./build/'));
 });
 
@@ -25,7 +25,7 @@ gulp.task('build', function() {
    return gulp.src('./src/main.jade')
             .pipe(jade({ pretty: true }))
             .pipe(inlineCss())
-            .pipe(rename("index.html"))
+            .pipe(rename('index.html'))
             .pipe(gulp.dest('.'));
 });
 
@@ -33,15 +33,15 @@ gulp.task('test', function() {
   var fs = require('fs');
 
   var transport = nodemailer.createTransport({
-    host: "mailtrap.io",
+    host: 'mailtrap.io',
     port: 2525,
     auth: {
-      user: "",
-      pass: ""
+      user: '',
+      pass: ''
     }
   });
 
-  fs.readFile('./build/index.html', "utf8", function (err, data) {
+  fs.readFile('./build/index.html', 'utf8', function (err, data) {
     if (err) throw err;
 
     var mailOptions = {
